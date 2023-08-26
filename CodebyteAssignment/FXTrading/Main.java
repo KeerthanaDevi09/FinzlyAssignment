@@ -14,10 +14,10 @@ public class Main {
 			{
 				System.out.println("Enter customer Name:");
 				sc.nextLine();
-                String customerName = sc.nextLine();
+                                String customerName = sc.nextLine();
 
-                System.out.println("Enter Currency Pair:");
-                String currencyPair = sc.nextLine();
+                                System.out.println("Enter Currency Pair:");
+                                String currencyPair = sc.nextLine();
 
 				if(!currencyPair.equalsIgnoreCase("USDINR"))
 				{
