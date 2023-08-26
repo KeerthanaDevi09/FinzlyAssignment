@@ -33,7 +33,7 @@ public class FXTrading {
 	@Override
 	public String toString() {
 		double usdToInr=amount*rate;
-		return getTradeNumber() + "      ---" + getCurrencyPair() + "      ---" + getCustomerName() + "    ---" + "INR" + (int)usdToInr + "---" + getRate() + ":00";
+		return getTradeNumber() + "         " + getCurrencyPair() + "         " + getCustomerName() + "       " + "INR" + (int)usdToInr + "   " + getRate() + ":00";
 	}
 	
 		
