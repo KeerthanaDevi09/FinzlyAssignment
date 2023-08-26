@@ -52,7 +52,7 @@ public class Main {
 			}
 			else if(option==2)
 			{
-				System.out.println("TradeNo---Currency Pair---CustomerName---Amount   ---Rate");
+				System.out.println("TradeNo   Currency Pair   CustomerName   Amount      Rate");
                 for (BookTrade trade : trades) {
                     System.out.println(trade.toString());
                 }
