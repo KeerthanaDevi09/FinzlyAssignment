@@ -53,9 +53,9 @@ public class Main {
 			else if(option==2)
 			{
 				System.out.println("TradeNo   Currency Pair   CustomerName   Amount      Rate");
-                for (BookTrade trade : trades) {
-                    System.out.println(trade.toString());
-                }
+                                for (BookTrade trade : trades) {
+                                      System.out.println(trade.toString());
+                                 }
 			}
 			else if(option==3)
 			{
