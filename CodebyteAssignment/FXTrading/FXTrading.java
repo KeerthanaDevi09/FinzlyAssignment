@@ -6,7 +6,7 @@ public class FXTrading {
 	private double amount;
 	private double rate;
 	private static int tradeCount=1;
-	private int tradeNumber;;
+	private int tradeNumber;
 	public FXTrading(String currencyPair, String customerName, double amount, double rate) {
 		this.currencyPair = currencyPair;
 		this.customerName = customerName;
