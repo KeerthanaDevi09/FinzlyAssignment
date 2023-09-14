@@ -1,0 +1,13 @@
+<p>prime-check works!</p>
+
+<!-- prime-check.component.html -->
+<div>
+    <h2>Prime Number Checker</h2>
+    <label for="numberInput">Enter a number:</label>
+    <input type="number" id="numberInput" [(ngModel)]="userInput" />
+    <button (click)="checkPrime()">Check Prime</button>
+    <p *ngIf="result !== null">
+      {{ userInput }} is {{ result ? 'prime' : 'not prime' }}.
+    </p>
+  </div>
+  

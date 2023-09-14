@@ -1,0 +1,9 @@
+<p>classbinding works!</p>
+
+<h2>Class binding Button Example</h2>
+
+<button (click)="onClick()">Submit</button>
+<p [class.text-style]="isItalic" [class.text-color]="isChange">Hello all!!!</p>
+<br><br>
+
+<div [ngClass]="{'red-text':true, 'bold-text':true, 'italic-text':true}">Dynamic class binding and directly apply json object in view file</div>
