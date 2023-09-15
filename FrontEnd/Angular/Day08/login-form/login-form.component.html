@@ -1,0 +1,19 @@
+<p>login-form works!</p>
+
+<div class="login-container">
+    <h2>Login</h2>
+    <form>
+        <div class="form-group">
+          <label>Username</label>
+          <input #user (keyup)="onKeyUpUser(user)" type="text" name="username" id="username" class="form-control" placeholder="Enter the Username">
+        </div>
+        <br><br>
+        <div class="form-group">
+            <label>Password</label>
+            <input #pass (keyup)="onKeyUpPass(pass)" type="password" name="password" id="password" class="form-control" placeholder="Enter the Password">
+        </div>
+        <button (click)="onSubmit(user.value,pass.value)">Login</button>
+    </form>
+</div>
+
+
