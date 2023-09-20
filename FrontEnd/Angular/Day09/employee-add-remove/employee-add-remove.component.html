@@ -1,0 +1,33 @@
+<p>employee-add-remove works!</p>
+
+<h3>Add and Remove Employee Details</h3>
+<div class="emp-container">
+    <h4>Employee Data</h4>
+    <div class="emp-form">
+        <label for="id">Id   :: &nbsp;&nbsp;</label>
+        <input type="text" id="id" [(ngModel)]="employee.id" placeholder="Enter employee id"><br><br>
+        <label for="name">Name :: &nbsp;&nbsp;</label>
+        <input type="text" id="name" [(ngModel)]="employee.name" placeholder="Enter employee name"><br><br>
+        <label for="salary">Salary :: &nbsp;&nbsp;</label>
+        <input type="text" id="salary" [(ngModel)]="employee.salary" placeholder="Enter employee salary"><br><br>
+        <br><br>
+        <button (click)="onAdd()">Add</button><br><br>
+    </div>
+    <table class="emp-table">
+        <thead>
+            <th>Employee Id</th>
+            <th>Employee Name</th>
+            <th>Employee Salary</th>
+            <th>remove</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let emp of employees;index as i">
+                <td>{{emp.id}}</td>
+                <td>{{emp.name}}</td>
+                <td>{{emp.salary}}</td>
+                <td><button (click)="onRemove(i)">Remove</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+

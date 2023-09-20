@@ -1,0 +1,9 @@
+<p>mouse-event works!</p>
+<h2>Change the transaprency of the image while mouse is hover on the image</h2>
+<div 
+    (mouseover)="onMouseOver()"
+    (mouseout)="onMouseOut()"
+    [ngStyle]="{'opacity':opacity}"
+>
+    <img class="=imgContainer" src="{{imgUrl}}" alt="My Image">
+</div>

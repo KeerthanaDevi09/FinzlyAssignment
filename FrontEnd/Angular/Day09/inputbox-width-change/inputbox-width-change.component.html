@@ -1,0 +1,4 @@
+<p>inputbox-width-change works!</p>
+<h2>Change the width of the input box by entering a number</h2>
+<label>Enter the number  :: &nbsp; &nbsp;</label>
+<input (change)="onChange()" type="number" [(ngModel)]="number1" [style.width.px]="width">
