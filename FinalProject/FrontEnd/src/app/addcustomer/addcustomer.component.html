@@ -1,0 +1,85 @@
+<div class="container-fluid">
+    <app-header></app-header>
+  </div>
+  
+  <br>
+  <h2 style="color: rgb(8, 226, 70); text-align: center;">Add the customer Details</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+  
+          <div class="myclass">
+            <label for="customerId">Customer Id     :: &nbsp;&nbsp;</label>
+            <input type="text" id="customerId" placeholder="EnterCustomer Id"
+              #customerId="ngModel" ngModel name="customerId" required>
+            <div class="error-message" *ngIf="customerId.touched && !customerId.valid">
+              <i class="fas fa-exclamation-circle"></i> Please Enter the Customer Id
+            </div>
+          </div>
+  
+          <div class="myclass">
+            <label for="customerName">Customer Name  :: &nbsp;&nbsp;</label>
+            <input type="text" id="customerName" placeholder="Enter Customer Name"
+              #customerName="ngModel" ngModel name="customerName" required>
+            <div class="error-message" *ngIf="customerName.touched && customerName.invalid">
+              <i class="fas fa-exclamation-circle"></i> Please Enter the Customer Name
+            </div>
+          </div>
+
+          <div class="myclass">
+            <label for="customerGmail">Customer Gmail  :: &nbsp;&nbsp;</label>
+            <input type="text" id="customerGmail" placeholder="Enter customer Gmail"
+              #customerGmail="ngModel" ngModel name="customerGmail" required>
+            <div class="error-message" *ngIf="customerGmail.touched && customerGmail.invalid">
+              <i class="fas fa-exclamation-circle"></i> Please Enter the customer Gmail
+            </div>
+          </div>
+
+          <div class="myclass">
+            <label for="customerMobileNumber">Mobile Number  :: &nbsp;&nbsp;</label>
+            <input type="number" id="customerMobileNumber" placeholder="Enter MobileNumber"
+              #customerMobileNumber="ngModel" ngModel name="customerMobileNumber" minlength="10" maxlength="10" pattern="^[0-9]{10}$"  required>
+            <div class="error-message" *ngIf="customerMobileNumber.touched && customerMobileNumber.invalid">
+              <i class="fas fa-exclamation-circle"></i> Please Enter 10 digit customer Mobile Number
+            </div>
+          </div>
+
+          <div class="myclass">
+            <label for="dueDate">Bill Due Date       :: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" id="dueDate" placeholder="Enter Due Date"
+              #dueDate="ngModel" ngModel name="dueDate" required>
+            <div class="error-message" *ngIf="dueDate.touched && dueDate.invalid">
+              <i class="fas fa-exclamation-circle"></i> Please Enter the dueDate
+            </div>
+          </div>
+
+          <div class="myclass">
+            <label for="unitConsumption">Unit Consumed     :: &nbsp;&nbsp;</label>
+            <input type="number" id="unitConsumption" placeholder="Unit Consumption"
+              #unitConsumption="ngModel" ngModel name="unitConsumption" required>
+            <div class="error-message" *ngIf="unitConsumption.touched && !unitConsumption.valid">
+              <i class="fas fa-exclamation-circle"></i> Please Enter unit Consumed
+            </div>
+          </div>
+
+          <div class="myclass">
+            <label for="otp">OTP  :: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" id="otp" placeholder="Enter the otp"
+              #otp="ngModel" ngModel name="otp" required>
+            <div class="error-message" *ngIf="otp.touched && otp.invalid">
+              <i class="fas fa-exclamation-circle"></i> Please Enter the otp
+            </div>
+          </div>
+  
+         <br>
+  
+          <button type="submit" class="my-button" [disabled]="isButtonDisabled">
+            <i class="fas fa-check"></i> Submit
+          </button>
+  
+        </form>
+      </div>
+    </div>
+  </div>
+  

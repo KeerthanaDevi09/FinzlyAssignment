@@ -1,0 +1,39 @@
+<app-header></app-header>
+<br><br>
+<div class="bill-details-container">
+    <h2>All Bill Details</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Bill Number</th>
+          <th>Unit Consumption</th>
+          <th>Amount</th>
+          <th>Bill Due Date</th>
+          <th>Customer ID</th>
+          <th>Customer Name</th>
+          <th>Bill Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let bill of bills">
+          <td>{{ bill.billNumber }}</td>
+          <td>{{ bill.unitConsumption }}</td>
+          <td>{{ bill.amount }}</td>
+          <td>{{ bill.billDueDate }}</td>
+          <td>{{ bill.customerId }}</td>
+          <td>{{ bill.customerName }}</td>
+          <td>
+            <button
+              [ngClass]="{
+                'paid-button': bill.billStatus === 'Paid',
+                'unpaid-button': bill.billStatus === 'Un-Paid'
+              }"
+            >
+              {{ bill.billStatus }}
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
