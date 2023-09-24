@@ -1,0 +1,7 @@
+<div class="file-upload-container">
+    <label for="fileInput" class="custom-button">Choose File</label>
+    <input type="file" id="fileInput" class="file-input" (change)="onFileSelected($event)" accept=".csv" style="display: none;">
+    <br><br>
+    <button class="upload-button" (click)="uploadFile()">Upload</button>
+  </div>
+

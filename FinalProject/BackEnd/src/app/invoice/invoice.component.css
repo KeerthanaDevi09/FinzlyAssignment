@@ -1,0 +1,26 @@
+.paid-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .unpaid-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  table{
+    align-items: center;
+    text-align: center;
+}
+
+  
+  
+  
+  
+  

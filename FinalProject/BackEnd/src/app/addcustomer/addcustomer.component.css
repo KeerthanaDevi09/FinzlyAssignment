@@ -1,0 +1,56 @@
+.container-fluid {
+  background-color: #f0f0f0; 
+  padding: 20px;
+  text-align: center; 
+}
+
+.container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.col {
+  max-width: 400px; 
+  width: 100%;
+  padding: 20px; 
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.myclass {
+  margin-bottom: 20px;
+}
+
+.my-button {
+  background-color: #094687; 
+  color: #fff; 
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px; 
+}
+
+.my-button:hover {
+  background-color: #0056b3; 
+}
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.fa-exclamation-circle {
+  color: red; 
+  margin-right: 5px;
+}
+
+.fa-check {
+  margin-right: 5px;
+}
+
+label {
+  font-weight: bold;
+}
